@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%tropes.forEach(function(element) { %>
+      <h1><%= element.trope %></h1>
+      <h5>Average rating: <%=element.avgs %></h5>
+      <h5>Appears in <%= element.counts %> movies</h5>
+  <%  });  %>
+  </body>
+</html>
